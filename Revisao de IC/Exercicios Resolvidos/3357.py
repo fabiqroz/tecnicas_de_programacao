@@ -1,6 +1,7 @@
 # Revisao IC - arrays e funções
 
 def encontra_rica(n, l, q, nomes):
+    
     rodadas = int(l//q)
     sobra = ((l*10)%(q*10))/10
 
@@ -18,6 +19,7 @@ n, litros_garrafa, litros_cuia = [eval(num) for num in input().split()]
 
 nomes = []
 [nomes.append(nome) for nome in input().split()]
+
 
 rica, bebeu = encontra_rica(n, litros_garrafa, litros_cuia, nomes)
 
