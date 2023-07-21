@@ -1,25 +1,4 @@
 
-'''Importação direta::
-import <nome do modulo> as sigla'''
-
-# import calculadora as cal
-
-# s = cal.som(1.5, 4.7)
-# sub = cal.dif(1.5, 4.7)
-# m = cal.mul(1.5, 4.7)
-# d = cal.div(1.5, 4.7)
-
-# print(f"soma: {s}")
-# print(f"Diferença: {sub}")
-# print(f"Multiplicacao: {m}")
-# print(f"Divisao: {d}")
-
-
-'''Importação das funções específicas:
-from <nome do modulo> import func1, func2
-ou
-from <nome do modulo> import *'''
-
 # from calculadora import som, dif, mul, div
 
 # s = som(1.5, 4.7)
@@ -33,19 +12,13 @@ from <nome do modulo> import *'''
 # print(f"Divisao: {d}")
 
 
-'''Importação das classes específicas:
-from <nome do modulo> import class1, class2'''
+# from calculadora import calculadora
 
-# from calculadora import calculadora 
-
-# # Objeto da classe calculadora
-# op = calculadora(1.5, 4.7)
-
-# # acessando os métodos da classe calculadora
-# s = op.som()
-# sub = op.dif()
-# m = op.mul()
-# d = op.div()
+# c = calculadora()
+# s = c.soma(10.0, 0.5)
+# sub = c.subtrai(1, -1)
+# m = c.multiplica(2, 4.5)
+# d = c.divide(1.5, 3)
 
 # print(f"soma: {s}")
 # print(f"Diferença: {sub}")
@@ -53,24 +26,16 @@ from <nome do modulo> import class1, class2'''
 # print(f"Divisao: {d}")
 
 
-'''Importação de uma classe/função específica com sigla:
-from <nome do modulo> import class1 as sigla'''
 
 # from calculadora import calculadora  as calc
 
-# # Objeto da classe calculadora
-# op = calc(1.5, 4.7)
-
-# # acessando os métodos da classe calculadora
-# s = op.som()
-# sub = op.dif()
-# m = op.mul()
-# d = op.div()
+# c = calc()
+# s = c.soma(10.0, 0.5)
+# sub = c.subtrai(1, -1)
+# m = c.multiplica(2, 4.5)
+# d = c.divide(1.5, 3)
 
 # print(f"soma: {s}")
 # print(f"Diferença: {sub}")
 # print(f"Multiplicacao: {m}")
 # print(f"Divisao: {d}")
-
-
-
