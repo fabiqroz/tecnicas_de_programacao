@@ -1,53 +1,35 @@
-''' Criando um módulo chamado calculadora:
-Módulo de cálculo que faz operações matemáticas simples, 
-como adição, multiplicação, subtração e divisão.'''
+# Sem POO
+pi = 3.1416 
 
+def soma(a,b):
+    return a+b
 
-## Com POO:
+def diferenca(a,b):
+    return a-b
+
+def multiplicacao(a,b):
+    return a*b
+
+def divisao(a,b):
+    return a/b
+
+# Com POO
 
 class calculadora():
-    # construtor
-    def __init__(self):
-       self.som = 0
-       self.dif = 0
-       self.mul = 0
-       self.div = 0
-    
-    # metodo soma
-    def soma(self, a, b):
-        self.som = a + b
-        return self.som
-    
-    # metodo subtracao
-    def subtrai(self, a, b):
-        self.dif = a - b
-        return self.dif
-    
-    # metodo multiplicacao
-    def multiplica(self, a, b):
-        self.mul = a * b
-        return self.mul
-    
-    #metodo divisao
-    def divide(self, a, b):
-        self.div = a/b
-        return self.div
-    
+    def __init__(self, a, b) -> None:
+        self.pi = 3.1416
+        self.num1 = a
+        self.num2 = b
 
-# Sem POO:
-
-# funcao soma
-def som(a,b):
-    return a + b
-
-# funcao diferenca
-def dif(a,b):
-    return a - b
-
-# funcao multiplicacao
-def mul(a,b):
-    return a * b
-
-# funcao divisao
-def div(a,b):
-    return a / b
+    def somar(self):
+        return self.num1 + self.num2
+    
+    def subtrair(self):
+        return self.num1 - self.num2
+    
+    def multiplicar(self):
+        return self.num1 * self.num2
+    
+    def dividir(self):
+        return self.num1 / self.num2
+    

@@ -1,41 +1,19 @@
+#from calculadora import soma, diferenca, multiplicacao, divisao
+import calculadora as calc
 
-# from calculadora import som, dif, mul, div
+numeros = [float(num) for num in input('Digite dois números reais separados por um espaço em branco: ').split()]
 
-# s = som(1.5, 4.7)
-# sub = dif(1.5, 4.7)
-# m = mul(1.5, 4.7)
-# d = div(1.5, 4.7)
+# s = calc.soma(numeros[0], numeros[1])
+# d = calc.diferenca(numeros[0], numeros[1])
+# m = calc.multiplicacao(numeros[0], numeros[1]
+# dv = calc.divisao(numeros[0], numeros[1])
 
-# print(f"soma: {s}")
-# print(f"Diferença: {sub}")
-# print(f"Multiplicacao: {m}")
-# print(f"Divisao: {d}")
+#from calculadora import calculadora
 
+c = calc.calculadora(numeros[0], numeros[1])
+s = c.somar()
+d = c.subtrair()
+m = c.multiplicar()
+dv = c.dividir()
 
-# from calculadora import calculadora
-
-# c = calculadora()
-# s = c.soma(10.0, 0.5)
-# sub = c.subtrai(1, -1)
-# m = c.multiplica(2, 4.5)
-# d = c.divide(1.5, 3)
-
-# print(f"soma: {s}")
-# print(f"Diferença: {sub}")
-# print(f"Multiplicacao: {m}")
-# print(f"Divisao: {d}")
-
-
-
-# from calculadora import calculadora  as calc
-
-# c = calc()
-# s = c.soma(10.0, 0.5)
-# sub = c.subtrai(1, -1)
-# m = c.multiplica(2, 4.5)
-# d = c.divide(1.5, 3)
-
-# print(f"soma: {s}")
-# print(f"Diferença: {sub}")
-# print(f"Multiplicacao: {m}")
-# print(f"Divisao: {d}")
+print(f'Soma: {s}, Diferença: {d}, Multiplicação: {m}, Divisão: {dv}')

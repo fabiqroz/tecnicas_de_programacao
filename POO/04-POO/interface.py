@@ -1,19 +1,21 @@
-
-from tkinter import Tk,  ttk, PhotoImage
+from tkinter import Tk, ttk, PhotoImage
 
 window = Tk()
+
 window.title('Software da Fabi')
-window.geometry("300x200+10+20")
+window.geometry('500x500+10+20')
 
-frm = ttk.Frame(window, padding=10)
-frm.grid()
+frame = ttk.Frame(window, padding=10)
+frame.grid()
 
-# ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
+label = ttk.Label(frame, text='Oi, Fabi!')
+label.grid(column=0, row=0)
 
-# ttk.Button(frm, text="Quit", command=window.destroy).grid(column=1, row=0)
+button = ttk.Button(frame, text='Sair', command=window.destroy)
+button.grid(column=0, row=10)
 
-# photo = PhotoImage(file = r"../../Figures/passada.png")
-# ttk.Label(frm, text = 'Ficar passada', image = photo).grid(column=10, row=0)
-
+photo = PhotoImage(file=r'POO/04-POO/figs/passada.png')
+img = ttk.Label(frame, image=photo)
+img.grid(column=0, row=20)
 
 window.mainloop()
