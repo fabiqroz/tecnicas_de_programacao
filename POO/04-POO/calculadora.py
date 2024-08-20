@@ -17,7 +17,6 @@ def divisao(a,b):
 
 class calculadora():
     def __init__(self, a, b) -> None:
-        self.pi = 3.1416
         self.num1 = a
         self.num2 = b
 
